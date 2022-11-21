@@ -33,24 +33,13 @@ function prependCat(name){
 
 }
 
-function removeLastcat(){
-
-    // const obj =[...cats];
-    // obj.pop();
-    // return obj:
-
-    // const obj =[cats.slice(0, -1)];
-    // return obj;
-
-    // return cats.slice(0, -1);
-
-    // const obj = [...cats];
-    // obj.splice[-1];
-    // return obj;
-
-    return cats.slice(0, cats.length -1);
+function removeLastCat(){
 
 
+
+    const newCat = cats.slice();
+    newCat.pop();
+    return newCat;
 }
 
 function removeFirstCat(){
